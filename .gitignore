@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Raw downloads (re-created by notebooks/01_data.ipynb)
+data/raw/

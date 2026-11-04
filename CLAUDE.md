@@ -74,7 +74,7 @@ Every evaluation run is saved so that each number in the report can be traced to
 ## Environment (IDUN)
 
 - NTNU's IDUN HPC cluster. Software is loaded with Lmod (`module avail`, `module load ...`).
-- Project directory on IDUN: `/cluster/home/hermaos/TDT13`. This repo is checked out there.
+- Project directory on IDUN: `/cluster/home/hermaos/GleasonExtraction`. This repo is checked out there.
 - Model weights: the default Hugging Face cache, `~/.cache/huggingface` (i.e. `/cluster/home/hermaos/.cache/huggingface`). MedGemma 1.5 4B-it is already there from TDT4501. New models (e.g. Gemma 3 4B-it) are downloaded to the same cache with `from_pretrained`, so no path needs to be set in the code.
 - Python env: conda env `master_thesis` (Python 3.11) at `~/.conda/envs/master_thesis`, shared with the TDT4501 project. Its packages are listed in that project's `environment.yml`, so adding or upgrading a package here also affects TDT4501. Check before changing pinned versions.
 - **Pin torch to a CUDA 12.x build** (e.g. `torch==2.14.0+cu126`). IDUN's GPU driver only supports up to CUDA 12.9, and a plain `pip install torch` installs a CUDA 13 build that cannot see the GPU.
@@ -110,6 +110,7 @@ Given the short timeline, favour simple, working code over abstractions.
 ## Working preferences
 
 - **Comment the code.** Give every function a docstring saying what it does, its inputs and its outputs. Add inline comments where the logic is not obvious. Aim at a reader who can program but does not know this codebase.
+- **Heavy programs are run by the author, not Claude.** Claude runs on the IDUN login node, which is shared and has no GPU. Anything heavy (loading or running the LLMs, full evaluation runs, anything that needs a GPU or a lot of CPU/memory) is started by the author once they have a GPU session or Slurm job. Claude prepares the code and says what to run. Light tasks are fine for Claude to run: reading files, small data checks with pandas, the regex baseline on a few reports, quick syntax checks. Keep them short and small, and do not start long-running or parallel processes on the login node.
 - **No git operations that change history or the remote.** Never run `git commit`, `git push` or `git pull`; the author does these. Read-only commands such as `git status`, `git diff` and `git log` are fine.
 
 ## Relation to the master's thesis
