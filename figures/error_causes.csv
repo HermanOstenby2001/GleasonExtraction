@@ -1,0 +1,6 @@
+,Regex,Gemma 3,MedGemma 1.5
+Label not matchable,19,19,17
+Wrong score chosen / other,26,5,3
+Invalid answer,0,7,1
+Hallucination,0,1,5
+Total wrong pairs,45,32,26

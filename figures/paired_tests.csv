@@ -1,0 +1,7 @@
+A,B,measure,only A right,only B right,p
+MedGemma 1.5,Gemma 3,pattern pair,10,4,0.1796
+MedGemma 1.5,Gemma 3,score,10,3,0.0923
+MedGemma 1.5,Regex,pattern pair,24,5,0.0005
+MedGemma 1.5,Regex,score,18,4,0.0043
+Gemma 3,Regex,pattern pair,22,9,0.0294
+Gemma 3,Regex,score,15,8,0.21

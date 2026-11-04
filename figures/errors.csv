@@ -1,0 +1,104 @@
+method,patient_id,label,predicted,cause,unreachable reason
+Regex,TCGA-CH-5745,3+4,4+3,Label not matchable,label disagrees with report
+Regex,TCGA-CH-5748,4+3,3+4,Label not matchable,label disagrees with report
+Regex,TCGA-CH-5765,3+4,4+3,Wrong score chosen / other,
+Regex,TCGA-EJ-5502,4+3,3+4,Label not matchable,label disagrees with report
+Regex,TCGA-EJ-5503,5+3,5+4,Wrong score chosen / other,
+Regex,TCGA-EJ-5504,4+3,3+5,Wrong score chosen / other,
+Regex,TCGA-EJ-5516,3+4,4+4,Wrong score chosen / other,
+Regex,TCGA-EJ-5527,4+3,4+4,Wrong score chosen / other,
+Regex,TCGA-EJ-5531,4+3,4+4,Wrong score chosen / other,
+Regex,TCGA-EJ-5542,3+4,4+3,Wrong score chosen / other,
+Regex,TCGA-EJ-7786,3+4,4+3,Wrong score chosen / other,
+Regex,TCGA-EJ-7788,3+4,4+3,Wrong score chosen / other,
+Regex,TCGA-EJ-A65M,3+3,3+4,Wrong score chosen / other,
+Regex,TCGA-EJ-AB20,3+3,4+3,Wrong score chosen / other,
+Regex,TCGA-G9-A9S0,4+4,not found,Label not matchable,no Gleason score in report
+Regex,TCGA-G9-A9S4,4+4,not found,Label not matchable,no Gleason score in report
+Regex,TCGA-J4-A83N,3+4,not found,Wrong score chosen / other,
+Regex,TCGA-J9-A52B,5+4,5+5,Wrong score chosen / other,
+Regex,TCGA-J9-A8CP,4+3,4+4,Label not matchable,label not in report
+Regex,TCGA-KC-A7F6,3+4,not found,Wrong score chosen / other,
+Regex,TCGA-TK-A8OK,3+4,4+3,Label not matchable,label disagrees with report
+Regex,TCGA-V1-A8MF,3+3,3+4,Label not matchable,label is the biopsy score
+Regex,TCGA-V1-A8ML,3+4,4+3,Wrong score chosen / other,
+Regex,TCGA-V1-A8MM,4+3,4+4,Wrong score chosen / other,
+Regex,TCGA-V1-A8WN,3+3,3+4,Label not matchable,label disagrees with report
+Regex,TCGA-V1-A8X3,3+4,3+5,Label not matchable,label not in report
+Regex,TCGA-V1-A9O7,5+4,5+5,Label not matchable,label is the biopsy score
+Regex,TCGA-V1-A9O9,3+5,4+5,Wrong score chosen / other,
+Regex,TCGA-V1-A9OA,4+5,5+4,Label not matchable,label disagrees with report
+Regex,TCGA-V1-A9OH,4+4,5+4,Label not matchable,label disagrees with report
+Regex,TCGA-V1-A9OX,3+5,4+5,Wrong score chosen / other,
+Regex,TCGA-V1-A9OY,4+3,5+3,Label not matchable,label is the biopsy score
+Regex,TCGA-V1-A9Z8,5+4,5+5,Wrong score chosen / other,
+Regex,TCGA-V1-A9Z9,4+5,5+4,Label not matchable,label disagrees with report
+Regex,TCGA-V1-A9ZG,4+5,5+4,Label not matchable,label disagrees with report
+Regex,TCGA-V1-A9ZI,4+5,5+4,Label not matchable,label is the biopsy score
+Regex,TCGA-V1-A9ZK,4+4,5+4,Label not matchable,label is the biopsy score
+Regex,TCGA-V1-A9ZR,4+4,5+4,Label not matchable,label is the biopsy score
+Regex,TCGA-VN-A88K,4+4,4+5,Wrong score chosen / other,
+Regex,TCGA-VN-A88O,3+4,4+4,Wrong score chosen / other,
+Regex,TCGA-VN-A88P,3+4,4+4,Wrong score chosen / other,
+Regex,TCGA-VP-A87J,3+4,4+3,Wrong score chosen / other,
+Regex,TCGA-XJ-A83H,3+4,4+3,Wrong score chosen / other,
+Regex,TCGA-YL-A9WY,5+4,5+5,Wrong score chosen / other,
+Regex,TCGA-ZG-A9N3,5+4,5+5,Wrong score chosen / other,
+Gemma 3,TCGA-CH-5745,3+4,4+3,Label not matchable,label disagrees with report
+Gemma 3,TCGA-CH-5748,4+3,3+4,Label not matchable,label disagrees with report
+Gemma 3,TCGA-CH-5789,3+4,3+3,Wrong score chosen / other,
+Gemma 3,TCGA-EJ-5502,4+3,3+4,Label not matchable,label disagrees with report
+Gemma 3,TCGA-EJ-5503,5+3,8+3,Invalid answer,
+Gemma 3,TCGA-EJ-7218,3+4,4+5,Wrong score chosen / other,
+Gemma 3,TCGA-G9-A9S0,4+4,not found,Label not matchable,no Gleason score in report
+Gemma 3,TCGA-G9-A9S4,4+4,not found,Label not matchable,no Gleason score in report
+Gemma 3,TCGA-J9-A8CK,4+5,9+7,Invalid answer,
+Gemma 3,TCGA-J9-A8CP,4+3,4+4,Label not matchable,label not in report
+Gemma 3,TCGA-KK-A6E2,3+4,7+4,Invalid answer,
+Gemma 3,TCGA-KK-A6E6,4+5,3+5,Hallucination,
+Gemma 3,TCGA-KK-A7AV,3+4,7+4,Invalid answer,
+Gemma 3,TCGA-KK-A8I4,4+3,7+3,Invalid answer,
+Gemma 3,TCGA-TK-A8OK,3+4,4+3,Label not matchable,label disagrees with report
+Gemma 3,TCGA-V1-A8MF,3+3,3+4,Label not matchable,label is the biopsy score
+Gemma 3,TCGA-V1-A8WN,3+3,3+4,Label not matchable,label disagrees with report
+Gemma 3,TCGA-V1-A8X3,3+4,3+5,Label not matchable,label not in report
+Gemma 3,TCGA-V1-A9O7,5+4,5+5,Label not matchable,label is the biopsy score
+Gemma 3,TCGA-V1-A9OA,4+5,5+4,Label not matchable,label disagrees with report
+Gemma 3,TCGA-V1-A9OH,4+4,5+4,Label not matchable,label disagrees with report
+Gemma 3,TCGA-V1-A9OY,4+3,5+3,Label not matchable,label is the biopsy score
+Gemma 3,TCGA-V1-A9Z9,4+5,5+4,Label not matchable,label disagrees with report
+Gemma 3,TCGA-V1-A9ZG,4+5,5+4,Label not matchable,label disagrees with report
+Gemma 3,TCGA-V1-A9ZI,4+5,5+4,Label not matchable,label is the biopsy score
+Gemma 3,TCGA-V1-A9ZK,4+4,5+4,Label not matchable,label is the biopsy score
+Gemma 3,TCGA-V1-A9ZR,4+4,5+4,Label not matchable,label is the biopsy score
+Gemma 3,TCGA-VN-A88I,4+4,4+5,Wrong score chosen / other,
+Gemma 3,TCGA-VN-A88K,4+4,8+4,Invalid answer,
+Gemma 3,TCGA-VN-A88O,3+4,7+4,Invalid answer,
+Gemma 3,TCGA-VN-A88P,3+4,4+4,Wrong score chosen / other,
+Gemma 3,TCGA-XA-A8JR,4+3,3+4,Wrong score chosen / other,
+MedGemma 1.5,TCGA-CH-5745,3+4,4+3,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-CH-5748,4+3,3+4,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-CH-5751,5+5,3+4,Hallucination,
+MedGemma 1.5,TCGA-CH-5752,4+4,3+4,Hallucination,
+MedGemma 1.5,TCGA-CH-5765,3+4,4+3,Wrong score chosen / other,
+MedGemma 1.5,TCGA-EJ-5502,4+3,3+4,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-EJ-7218,3+4,5+4,Hallucination,
+MedGemma 1.5,TCGA-G9-A9S0,4+4,3+4,Hallucination,no Gleason score in report
+MedGemma 1.5,TCGA-G9-A9S4,4+4,3+4,Hallucination,no Gleason score in report
+MedGemma 1.5,TCGA-HC-8256,3+4,13+14,Invalid answer,
+MedGemma 1.5,TCGA-J9-A8CP,4+3,4+4,Label not matchable,label not in report
+MedGemma 1.5,TCGA-TK-A8OK,3+4,4+3,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-V1-A8MF,3+3,3+4,Label not matchable,label is the biopsy score
+MedGemma 1.5,TCGA-V1-A8WN,3+3,3+4,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-V1-A8X3,3+4,3+5,Label not matchable,label not in report
+MedGemma 1.5,TCGA-V1-A9O7,5+4,5+5,Label not matchable,label is the biopsy score
+MedGemma 1.5,TCGA-V1-A9OA,4+5,5+4,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-V1-A9OH,4+4,5+4,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-V1-A9OY,4+3,5+3,Label not matchable,label is the biopsy score
+MedGemma 1.5,TCGA-V1-A9Z9,4+5,5+4,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-V1-A9ZG,4+5,5+4,Label not matchable,label disagrees with report
+MedGemma 1.5,TCGA-V1-A9ZI,4+5,5+4,Label not matchable,label is the biopsy score
+MedGemma 1.5,TCGA-V1-A9ZK,4+4,5+4,Label not matchable,label is the biopsy score
+MedGemma 1.5,TCGA-V1-A9ZR,4+4,5+4,Label not matchable,label is the biopsy score
+MedGemma 1.5,TCGA-VN-A88P,3+4,4+4,Wrong score chosen / other,
+MedGemma 1.5,TCGA-XA-A8JR,4+3,3+4,Wrong score chosen / other,
