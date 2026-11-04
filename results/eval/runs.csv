@@ -1,0 +1,2 @@
+run,date,method,model_id,note,changes,n,accuracy,macro_f1,pair_exact_match,accuracy_when_valid,valid_rate,not_found_rate,invalid_rate,possible_hallucination_rate
+v1,2026-11-04T13:08:41,regex,,"Regex baseline, final version (developed on the tuning set only), multi_score_rule=highest",first run,416,0.9279,0.8578,0.8918,0.9369,0.9904,0.0096,0.0,0.0

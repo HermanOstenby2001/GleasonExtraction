@@ -1,0 +1,417 @@
+patient_id,method,model_id,raw_output,pred_primary,pred_secondary,pred_score,status,parse_error,pair_in_text,possible_hallucination,label_primary,label_secondary,label_score,correct_score,correct_pair
+TCGA-2A-A8VL,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-2A-A8VO,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-2A-A8VT,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-2A-A8VV,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-2A-A8VX,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-2A-A8W1,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""3+4"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-2A-A8W3,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-2A-AAYO,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-2A-AAYU,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-4L-AA1F,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-CH-5737,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-CH-5738,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-CH-5739,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-CH-5740,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-CH-5741,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-CH-5743,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-CH-5744,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-CH-5745,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3"", ""4+3"", ""4+3""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-CH-5746,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-CH-5748,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,4,3,7,True,False
+TCGA-CH-5750,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-CH-5751,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+5""]}",5,5,10,valid,,True,False,5,5,10,True,True
+TCGA-CH-5752,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-CH-5753,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-CH-5754,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+3"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-CH-5761,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-CH-5762,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-CH-5764,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-CH-5765,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-CH-5766,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-CH-5767,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-CH-5768,regex,,"{""primary"": 2, ""secondary"": 4, ""matches"": [""2+4""]}",2,4,6,valid,,True,False,2,4,6,True,True
+TCGA-CH-5769,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""4+5"", ""5+4"", ""5+4"", ""5+4"", ""4+5"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-CH-5771,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-CH-5772,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-CH-5788,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-CH-5789,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+3"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-CH-5790,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-CH-5791,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-CH-5794,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5495,regex,,"{""primary"": 5, ""secondary"": 3, ""matches"": [""4+4"", ""5+3"", ""5+3""]}",5,3,8,valid,,True,False,5,3,8,True,True
+TCGA-EJ-5496,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+3"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5497,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5498,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-5499,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-5501,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-5502,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+3"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,4,3,7,True,False
+TCGA-EJ-5503,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""4+5"", ""5+3"", ""5+3""]}",5,4,9,valid,,True,False,5,3,8,False,False
+TCGA-EJ-5504,regex,,"{""primary"": 3, ""secondary"": 5, ""matches"": [""3+4"", ""3+5"", ""4+3"", ""4+3""]}",3,5,8,valid,,True,False,4,3,7,False,False
+TCGA-EJ-5505,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""3+3"", ""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-5506,regex,,"{""primary"": 5, ""secondary"": 3, ""matches"": [""4+3"", ""5+3"", ""5+3""]}",5,3,8,valid,,True,False,5,3,8,True,True
+TCGA-EJ-5507,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+3"", ""3+4"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-5508,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+3"", ""3+4"", ""3+3"", ""3+3"", ""3+3"", ""3+3"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5509,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5510,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-5511,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5512,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5514,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-5515,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5516,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+3"", ""3+4"", ""4+4"", ""3+4"", ""3+4""]}",4,4,8,valid,,True,False,3,4,7,False,False
+TCGA-EJ-5517,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3"", ""3+3"", ""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-EJ-5518,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5"", ""4+5"", ""4+4"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-5519,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4"", ""4+3"", ""4+3"", ""4+3"", ""4+4"", ""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-5521,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+3"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5524,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+4"", ""4+5"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-5525,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+4"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-5526,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-5527,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+3"", ""4+3""]}",4,4,8,valid,,True,False,4,3,7,False,False
+TCGA-EJ-5530,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+3"", ""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5531,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+3"", ""4+3""]}",4,4,8,valid,,True,False,4,3,7,False,False
+TCGA-EJ-5532,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-5542,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3"", ""3+4"", ""3+4""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-EJ-7115,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7123,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7125,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7218,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7312,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7314,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7315,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7317,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7318,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7321,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-EJ-7325,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7327,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7328,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7330,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7331,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7781,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7782,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-7783,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""3+4"", ""3+3"", ""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7784,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""3+4"", ""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7785,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7786,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""3+4"", ""3+4""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-EJ-7788,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""3+4"", ""3+4""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-EJ-7789,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""3+3"", ""4+3"", ""3+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-7791,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7792,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+3"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7793,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-7794,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-8468,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-8469,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-8470,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-8472,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-8474,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-A46B,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4"", ""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-A46D,regex,,"{""primary"": 3, ""secondary"": 5, ""matches"": [""3+5"", ""3+5"", ""3+5"", ""3+5""]}",3,5,8,valid,,True,False,3,5,8,True,True
+TCGA-EJ-A46E,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""3+3"", ""3+4"", ""4+4"", ""4+4"", ""3+3"", ""3+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-A46H,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-A46I,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-A65B,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+4"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-A65D,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4"", ""4+4"", ""3+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-A65E,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3"", ""3+4"", ""3+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-A65F,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+3"", ""4+4""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-A65G,regex,,"{""primary"": 3, ""secondary"": 5, ""matches"": [""3+5"", ""3+5"", ""3+3""]}",3,5,8,valid,,True,False,3,5,8,True,True
+TCGA-EJ-A65J,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-A65M,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+3"", ""3+3"", ""3+4"", ""3+3""]}",3,4,7,valid,,True,False,3,3,6,False,False
+TCGA-EJ-A6RA,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-A6RC,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-A7NF,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-A7NG,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-A7NJ,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-EJ-A7NK,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-EJ-A7NM,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-EJ-A7NN,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-A8FO,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-EJ-AB20,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""3+3"", ""4+3"", ""3+3""]}",4,3,7,valid,,True,False,3,3,6,False,False
+TCGA-EJ-AB27,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-FC-7961,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-FC-A4JI,regex,,"{""primary"": 5, ""secondary"": 3, ""matches"": [""5+3""]}",5,3,8,valid,,True,False,5,3,8,True,True
+TCGA-FC-A5OB,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-FC-A66V,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-FC-A8O0,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-G9-6329,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6332,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6333,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6336,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6338,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6339,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6342,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-G9-6343,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6347,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-G9-6348,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6351,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6353,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6354,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6356,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-G9-6361,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6362,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6363,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6364,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6365,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6366,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6367,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-G9-6370,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6371,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-G9-6373,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6377,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6378,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6379,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6384,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6385,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6494,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6496,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-6498,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-6499,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-G9-7509,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-G9-7510,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-G9-7519,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-7521,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-G9-7522,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-G9-7523,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+5"", ""5+5""]}",5,5,10,valid,,True,False,5,5,10,True,True
+TCGA-G9-7525,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-G9-A9S0,regex,,"{""primary"": null, ""secondary"": null, ""matches"": []}",,,,not_found,,,False,4,4,8,False,False
+TCGA-G9-A9S4,regex,,"{""primary"": null, ""secondary"": null, ""matches"": []}",,,,not_found,,,False,4,4,8,False,False
+TCGA-G9-A9S7,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-H9-7775,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-H9-A6BX,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-H9-A6BY,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7077,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-HC-7078,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7079,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7080,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7081,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-HC-7209,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-HC-7210,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7211,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7212,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7213,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-HC-7230,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7231,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7233,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-7736,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7737,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7740,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7741,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7742,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7744,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-7745,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-7747,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7748,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-HC-7749,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-7750,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7752,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7817,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-7818,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7819,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-HC-7820,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-7821,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-HC-8212,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-8213,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-HC-8216,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-8256,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-8257,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-8258,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-HC-8259,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-HC-8260,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-8262,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-HC-8264,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-HC-8265,regex,,"{""primary"": 3, ""secondary"": 5, ""matches"": [""3+5""]}",3,5,8,valid,,True,False,3,5,8,True,True
+TCGA-HC-8266,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-HC-A48F,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-HC-A4ZV,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-HC-A631,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-HC-A632,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-HC-A6AL,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A6AN,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-A6AO,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-A6AP,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A6AQ,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A6AS,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A6HX,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-HC-A6HY,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A76W,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A76X,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A8CY,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-HC-A8D0,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A8D1,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HC-A9TE,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-HC-A9TH,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-HI-7168,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-HI-7169,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-HI-7170,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-HI-7171,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-J4-8198,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-J4-8200,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A67K,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-J4-A67L,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A67M,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-J4-A67N,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A67O,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A67Q,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-J4-A67R,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-J4-A67S,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A67T,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A6G1,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-J4-A6G3,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-J4-A6M7,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A83I,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-J4-A83J,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A83K,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-J4-A83L,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-J4-A83M,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-J4-A83N,regex,,"{""primary"": null, ""secondary"": null, ""matches"": []}",,,,not_found,,,False,3,4,7,False,False
+TCGA-J4-AATV,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-J4-AATZ,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-J4-AAU2,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-J9-A52B,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+5"", ""5+4"", ""5+4"", ""5+4""]}",5,5,10,valid,,True,False,5,4,9,False,False
+TCGA-J9-A52C,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""3+3"", ""4+5"", ""4+5"", ""4+4""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-J9-A52E,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""3+3"", ""4+5"", ""4+5"", ""3+3""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-J9-A8CK,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""3+4"", ""3+4"", ""3+3"", ""4+5"", ""3+4"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-J9-A8CL,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""3+4"", ""3+3"", ""4+5"", ""4+5"", ""3+4""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-J9-A8CM,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""3+3"", ""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-J9-A8CN,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-J9-A8CP,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""3+3"", ""3+3""]}",4,4,8,valid,,True,False,4,3,7,False,False
+TCGA-KC-A4BL,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KC-A4BN,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KC-A4BO,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KC-A4BR,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KC-A4BV,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KC-A7F3,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+3""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KC-A7F5,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KC-A7F6,regex,,"{""primary"": null, ""secondary"": null, ""matches"": []}",,,,not_found,,,False,3,4,7,False,False
+TCGA-KC-A7FD,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KC-A7FE,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+3"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KK-A59X,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""3+3""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-KK-A59Y,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A5A1,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A6DY,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KK-A6E0,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A6E1,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A6E2,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KK-A6E3,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KK-A6E4,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KK-A6E5,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A6E6,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A6E7,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-KK-A7AP,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A7AQ,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A7AU,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A7AV,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KK-A7AW,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A7AY,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A7B0,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A7B1,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A7B2,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""3+4""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A7B3,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A7B4,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A8I4,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""3+4"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A8I5,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-KK-A8I6,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A8I7,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A8I8,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A8IA,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A8IC,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A8ID,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-KK-A8IF,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A8IG,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""3+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A8II,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""3+3""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A8IJ,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-KK-A8IK,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A8IL,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-KK-A8IM,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-M7-A71Z,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-M7-A720,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-M7-A721,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-M7-A722,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-M7-A723,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-M7-A724,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-M7-A725,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-MG-AAMC,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-QU-A6IL,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-QU-A6IM,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-QU-A6IN,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-QU-A6IO,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-SU-A7E7,regex,,"{""primary"": 5, ""secondary"": 3, ""matches"": [""5+3""]}",5,3,8,valid,,True,False,5,3,8,True,True
+TCGA-TK-A8OK,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-TP-A8TT,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-TP-A8TV,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-V1-A8MF,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+3"", ""3+4""]}",3,4,7,valid,,True,False,3,3,6,False,False
+TCGA-V1-A8MJ,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-V1-A8MK,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-V1-A8ML,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""3+4"", ""3+4"", ""3+4"", ""3+4"", ""4+3"", ""3+3"", ""3+4""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-V1-A8MM,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+3"", ""4+3"", ""4+4""]}",4,4,8,valid,,True,False,4,3,7,False,False
+TCGA-V1-A8MU,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-V1-A8WL,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4"", ""3+3"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-V1-A8WN,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,3,6,False,False
+TCGA-V1-A8WV,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-V1-A8WW,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5"", ""4+5"", ""3+4"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-V1-A8X3,regex,,"{""primary"": 3, ""secondary"": 5, ""matches"": [""3+5"", ""3+5"", ""3+3""]}",3,5,8,valid,,True,False,3,4,7,False,False
+TCGA-V1-A9O7,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+5"", ""5+5"", ""5+4""]}",5,5,10,valid,,True,False,5,4,9,False,False
+TCGA-V1-A9O9,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""3+5"", ""3+5"", ""3+5"", ""3+3"", ""4+5""]}",4,5,9,valid,,True,False,3,5,8,False,False
+TCGA-V1-A9OA,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""4+4"", ""5+4""]}",5,4,9,valid,,True,False,4,5,9,True,False
+TCGA-V1-A9OF,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-V1-A9OH,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+3"", ""5+4"", ""5+3""]}",5,4,9,valid,,True,False,4,4,8,False,False
+TCGA-V1-A9OL,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-V1-A9OQ,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3"", ""3+3"", ""3+3"", ""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-V1-A9OT,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3"", ""3+3"", ""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-V1-A9OX,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""3+5"", ""3+5"", ""3+5"", ""3+4"", ""3+3"", ""4+5""]}",4,5,9,valid,,True,False,3,5,8,False,False
+TCGA-V1-A9OY,regex,,"{""primary"": 5, ""secondary"": 3, ""matches"": [""5+3"", ""5+3"", ""5+3"", ""5+3"", ""5+3"", ""4+3""]}",5,3,8,valid,,True,False,4,3,7,False,False
+TCGA-V1-A9Z7,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-V1-A9Z8,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+4"", ""5+4"", ""5+4"", ""5+5"", ""4+3"", ""5+5""]}",5,5,10,valid,,True,False,5,4,9,False,False
+TCGA-V1-A9Z9,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,4,5,9,True,False
+TCGA-V1-A9ZG,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,4,5,9,True,False
+TCGA-V1-A9ZI,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""5+4"", ""5+4"", ""4+5""]}",5,4,9,valid,,True,False,4,5,9,True,False
+TCGA-V1-A9ZK,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""4+4""]}",5,4,9,valid,,True,False,4,4,8,False,False
+TCGA-V1-A9ZR,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""4+4"", ""5+4"", ""5+4"", ""5+4"", ""4+4""]}",5,4,9,valid,,True,False,4,4,8,False,False
+TCGA-VN-A88I,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-VN-A88K,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+4"", ""4+5"", ""4+4""]}",4,5,9,valid,,True,False,4,4,8,False,False
+TCGA-VN-A88L,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-VN-A88M,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-VN-A88N,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-VN-A88O,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""3+4"", ""4+4"", ""3+4"", ""4+4""]}",4,4,8,valid,,True,False,3,4,7,False,False
+TCGA-VN-A88P,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""3+4"", ""4+4"", ""4+4""]}",4,4,8,valid,,True,False,3,4,7,False,False
+TCGA-VN-A88Q,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-VN-A88R,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-VP-A875,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4"", ""3+4"", ""3+4"", ""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-VP-A87B,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-VP-A87E,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-VP-A87J,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""3+4"", ""3+4"", ""4+3"", ""3+4"", ""3+4""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-VP-AA1N,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-WW-A8ZI,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-X4-A8KS,regex,,"{""primary"": 3, ""secondary"": 4, ""matches"": [""3+4""]}",3,4,7,valid,,True,False,3,4,7,True,True
+TCGA-XA-A8JR,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3"", ""3+4""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-XJ-A83H,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""3+4"", ""3+4"", ""4+3""]}",4,3,7,valid,,True,False,3,4,7,True,False
+TCGA-XJ-A9DI,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-XJ-A9DK,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-XJ-A9DQ,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-XJ-A9DX,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-XK-AAIR,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-XK-AAIV,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+5"", ""5+5""]}",5,5,10,valid,,True,False,5,5,10,True,True
+TCGA-XK-AAJ3,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-XQ-A8TA,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+5""]}",5,5,10,valid,,True,False,5,5,10,True,True
+TCGA-Y6-A8TL,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-Y6-A9XI,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4"", ""4+4"", ""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-YJ-A8SW,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-YL-A8HK,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-YL-A8HL,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-YL-A8HM,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-YL-A8HO,regex,,"{""primary"": 4, ""secondary"": 3, ""matches"": [""4+3""]}",4,3,7,valid,,True,False,4,3,7,True,True
+TCGA-YL-A8SA,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-YL-A8SJ,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-YL-A8SL,regex,,"{""primary"": 4, ""secondary"": 4, ""matches"": [""4+4""]}",4,4,8,valid,,True,False,4,4,8,True,True
+TCGA-YL-A8SO,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-YL-A9WI,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-YL-A9WK,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-YL-A9WY,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+4"", ""5+5""]}",5,5,10,valid,,True,False,5,4,9,False,False
+TCGA-ZG-A8QW,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-ZG-A8QX,regex,,"{""primary"": 3, ""secondary"": 3, ""matches"": [""3+3"", ""3+3""]}",3,3,6,valid,,True,False,3,3,6,True,True
+TCGA-ZG-A8QY,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-ZG-A8QZ,regex,,"{""primary"": 4, ""secondary"": 5, ""matches"": [""4+5"", ""4+5""]}",4,5,9,valid,,True,False,4,5,9,True,True
+TCGA-ZG-A9L0,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-ZG-A9L5,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-ZG-A9LB,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-ZG-A9LS,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-ZG-A9MC,regex,,"{""primary"": 5, ""secondary"": 4, ""matches"": [""5+4"", ""5+4"", ""5+4""]}",5,4,9,valid,,True,False,5,4,9,True,True
+TCGA-ZG-A9N3,regex,,"{""primary"": 5, ""secondary"": 5, ""matches"": [""5+4"", ""5+5"", ""5+4"", ""5+4""]}",5,5,10,valid,,True,False,5,4,9,False,False

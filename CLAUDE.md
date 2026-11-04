@@ -99,6 +99,52 @@ Every patient has a label, but not every report necessarily states a Gleason sco
 - Decide **before** the evaluation runs which score counts as correct when a report has several (e.g. the highest, or the one in the final diagnosis). Say the same thing in the prompt and in the regex, and state the rule in the report.
 - Estimate how many reports really lack a score, e.g. by checking the regex's "not found" cases by hand. That number is the ceiling for any method and is worth reporting.
 
+## Findings so far
+
+Results to use in the report. Each number can be traced to a logged run or to the data notebook.
+
+### Data (`notebooks/01_data.ipynb`)
+
+- 446 prostate reports, all with a label; primary + secondary always equals the score.
+- Score distribution: 6: 45, 7: 237, 8: 57, 9: 103, 10: 4. Pairs: 3+4: 144, 4+3: 93, 4+5: 74, 4+4: 47, 3+3: 44, 5+4: 29, 3+5: 5, 5+3: 5, 5+5: 4, 2+4: 1.
+- One label has pattern 2 (2+4), so the valid pattern range in `common.py` is 1–5, not 3–5.
+- Split (seed 13, stratified on score): 30 tuning reports, 416 eval reports. The tuning set has no score 10.
+- Reports are 388–10,928 characters (mean ≈ 3,700).
+
+### Multi-score rule
+
+Decided on the tuning set, before any eval run: when a report has several different pairs, the answer is the **highest** score (highest sum, ties broken by the higher primary pattern). On the tuning set this was right in all 3 multi-score reports; "first mentioned" got one wrong (0.967 vs. 0.933 accuracy). The same rule must be stated in the LLM prompt.
+
+### Regex baseline (`results/eval/v1`, 416 eval reports)
+
+The regex was developed on the 30 tuning reports only (29/30 correct there; the one miss is TCGA-X4-A8KQ, whose report says 4+3 but whose label is 4+5).
+
+| Metric | Value |
+|---|---|
+| Accuracy (score) | 0.928 (386/416) |
+| Macro-F1 (score) | 0.858 |
+| F1 per score | 6: 0.95, 7: 0.963, 8: 0.822, 9: 0.938, 10: 0.615 |
+| Pattern-pair exact match | 0.892 (371/416) |
+| Not found | 4 (0.96 %) |
+| Invalid | 0 |
+
+Macro-F1 is pulled down by score 10 (4 reports): five reports labelled 9 were predicted as 10.
+
+**What the regex gets wrong (45 wrong pairs on eval):**
+
+1. **Wrong choice among several pairs: 29 reports** (7 of them still have the right score). The label pair is in the report, but the "highest" rule picks another one. Typical causes:
+   - a score from the earlier **biopsy or clinical history** ("biopsy revealed Gleason 4+4=8", "Gleason 5+5 all cores"), e.g. EJ-5504, EJ-5527, J9-A52B, EJ-AB20;
+   - a **minor component** next to the main score ("predominant pattern 7 (3+4) with a component of 8 (4+4)", VN-A88P);
+   - separate **lobes or nodules** with different scores.
+2. **Label not among the pairs found: 12 reports.** Most are label/report disagreements, where the report clearly states a different pair than the TCGA label: CH-5745 (report 4+3 four times, label 3+4), CH-5748, EJ-5502, TK-A8OK (`7=4+3`, label 3+4), V1-A8WN, V1-A9OA, V1-A9Z9, V1-A9ZG, and V1-A9OH (report internally inconsistent: "5+4, primary pattern 5, secondary pattern 3"; label 4+4). CH-5765 is a regex miss: an amended "Remark. 3+4=7" without the word Gleason nearby. J9-A8CP and V1-A8X3 were not checked in detail.
+3. **Not found: 4 reports.**
+   - 2 reports contain **no Gleason score at all** (G9-A9S0, G9-A9S4; the text seems truncated and starts in the middle of the synoptic form). No method can get these right.
+   - 2 are **OCR misses**: `GLEASON SCORE (PRIMARY + SECONDARY PATTERN) : 3 4 =. 7/10` (the `+` is lost, J4-A83N) and `Primary Pat t er n: Grade 3. Secondar y Pat t ern: Grade 4` (OCR space inside "Secondary", KC-A7F6).
+
+**Room for an LLM:** about 32 eval reports are recoverable in principle (29 choice errors + 2 OCR misses + CH-5765). The 9 clear label disagreements (up to 11 with J9-A8CP and V1-A8X3) and the 2 reports without a score cannot be fixed by any method, so the best reachable pair exact match on eval is about 0.97 (403–405/416), against 0.892 for the regex. The regex is still a strong baseline on the score itself (0.928 accuracy), so an LLM that picks the wrong score or gives invalid answers can easily end up below it.
+
+**Post-hoc check (not used; done once on all 446 reports after v1 was logged):** other selection rules would have done better — pair / score correct out of 446: highest 400 / 415, first 402 / 420, highest ignoring biopsy/history context 405 / 418, **most frequent pair 418 / 430**. These were found by looking at the eval set, so the rule was **not** changed; v1 with "highest" is the baseline. This can be mentioned in the report as a limitation of the regex and as evidence that choosing among several scores needs context.
+
 ## Deliverables and deadlines
 
 - **Written report:** about **2,000 words**, deadline **13 November 2026**.

@@ -1,0 +1,15 @@
+{
+  "method": "regex",
+  "model_id": null,
+  "subset": "eval",
+  "n_reports": null,
+  "multi_score_rule": "highest",
+  "pair_regex": "(?<![\\d+])([1-5])(?!\\d)\\s*\\+\\s*([1-5])(?!\\d)(?!\\s*\\+\\s*\\d)(?:\\s*=\\W{0,3}(\\d{1,2})(?!\\d))?",
+  "pair_context_regex": "gleason|grade|pattern|score|sum",
+  "pair_context_chars": 60,
+  "labelled_regex": "primary\\W{0,3}(?:gleason\\W{0,3})?(?:p\\s?a\\s?t\\s?t\\s?e\\s?r\\s?n|g\\s?r\\s?a\\s?d\\s?e)\\W{0,5}(?:g\\s?r\\s?a\\s?d\\s?e\\W{0,3})?([1-5])(?!\\d).{0,150}?secondary\\W{0,3}(?:gleason\\W{0,3})?(?:p\\s?a\\s?t\\s?t\\s?e\\s?r\\s?n|g\\s?r\\s?a\\s?d\\s?e)\\W{0,5}(?:g\\s?r\\s?a\\s?d\\s?e\\W{0,3})?([1-5])(?!\\d)",
+  "log_run": true,
+  "note": "Regex baseline, final version (developed on the tuning set only), multi_score_rule=highest",
+  "run": "v1",
+  "date": "2026-11-04T13:08:41"
+}

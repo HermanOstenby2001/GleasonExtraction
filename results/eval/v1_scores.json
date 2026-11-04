@@ -1,0 +1,42 @@
+{
+  "n": 416,
+  "accuracy": 0.9279,
+  "macro_f1": 0.8578,
+  "f1_per_score": {
+    "6": 0.95,
+    "7": 0.9631,
+    "8": 0.8224,
+    "9": 0.9381,
+    "10": 0.6154
+  },
+  "pair_exact_match": 0.8918,
+  "accuracy_when_valid": 0.9369,
+  "valid_rate": 0.9904,
+  "not_found_rate": 0.0096,
+  "invalid_rate": 0.0,
+  "possible_hallucination_rate": 0.0,
+  "parse_errors": {},
+  "confusion_matrix": {
+    "10": {
+      "10": 4
+    },
+    "6": {
+      "6": 38,
+      "7": 4
+    },
+    "7": {
+      "7": 209,
+      "8": 10,
+      "not_found": 2
+    },
+    "8": {
+      "8": 44,
+      "9": 7,
+      "not_found": 2
+    },
+    "9": {
+      "10": 5,
+      "9": 91
+    }
+  }
+}
