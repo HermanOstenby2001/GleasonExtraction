@@ -119,7 +119,7 @@ Results to use in the report. Each number can be traced to a logged run or to th
 
 ### Reasoning (decided before any LLM run)
 
-The main comparison is regex vs. MedGemma 1.5 vs. Gemma 3, **all LLMs with reasoning blocked** (`block_thinking=True`, i.e. the `<unused94>` token is banned with `bad_words_ids`, for both models). Reason: the task is locating and copying a score, which should not need reasoning, and it is much faster. MedGemma with reasoning allowed may be added later as an extra condition. Both models use `max_new_tokens=1024`, greedy decoding, no input truncation (longest prompt: 2,834 tokens).
+The main comparison is regex vs. MedGemma 1.5 vs. Gemma 3, **all LLMs with reasoning blocked** (`block_thinking=True`, i.e. the `<unused94>` token is banned with `bad_words_ids`, for both models). Reason: the task is locating and copying a score, which should not need reasoning, and it is much faster. MedGemma with reasoning allowed may be added later as an extra condition. Both models use `max_new_tokens=1024`, greedy decoding, no input truncation (longest prompt: 2,878 tokens with the final prompt).
 
 ### LLM tuning runs (`results/tuning/v1`, `v2`, 30 tuning reports)
 
@@ -134,6 +134,46 @@ Prompt with the "final diagnosis" wording, reasoning blocked, greedy, `max_new_t
 - Gemma 3's 2 invalid answers are the same error: with the notation **"GLEASON SCORE 9 (4+5)"** (total written before the pair) it put the total in `primary` (`{"primary": 9, "secondary": 5}` for KK-A59V; `{"primary": 7, "secondary": 3}` for KK-A8IH, "7 (4+3) WITH TERTIARY GLEASON GRADE 5"). Both reports have extra numbers near the score (an OCR fragment "5/3+2", a tertiary grade 5). Four other KK reports with the same notation were correct. Not hallucinations: all numbers are in the report, just put in the wrong field.
 - Both models sometimes wrap the JSON in a ```` ```json ```` code block (MedGemma always); the parser handles it.
 - **Decision: the prompt was not changed after these runs.** Adding a sentence about the "total first" notation was considered and rejected, so the difference is kept as a finding about the models rather than tuned away. The prompt in `results/tuning/v1_config.json` is the final prompt for the eval runs.
+
+### Main comparison on the eval set (`results/eval/v1`–`v3`, 416 reports)
+
+Same final prompt as the tuning runs, reasoning blocked for both LLMs, greedy, `max_new_tokens=1024` (never reached; ~17–18 new tokens per answer, ~6 min per LLM run).
+
+| Metric | Regex (v1) | Gemma 3 (v2) | MedGemma 1.5 (v3) |
+|---|---|---|---|
+| Accuracy (score) | 0.928 | 0.945 | **0.962** |
+| Macro-F1 (score) | 0.858 | **0.932** | 0.915 |
+| Pattern-pair exact match | 0.892 (371) | 0.923 (384) | **0.938** (390) |
+| Invalid | 0 | 7 (1.7 %) | 1 (0.2 %) |
+| Not found | 4 | 2 | 0 |
+| Possible hallucination (automatic flag) | 0 | 2 | 6 |
+| Pair exact match on the 397 reachable reports (see below) | 0.935 | 0.967 | **0.982** |
+
+- **Macro-F1 ranks Gemma 3 above MedGemma** only because of score 10 (4 reports): Gemma 3 gets 4/4, MedGemma 3/4 (F1 0.889 vs. 0.75). On every other score MedGemma's F1 is equal or higher. With 4 reports in the class, this is noise; say so in the report.
+- **Paired comparison (McNemar exact test, pattern pair):** MedGemma vs. Gemma 3: 10 reports only MedGemma right, 4 only Gemma 3 right, p = 0.18 (score: 10 vs. 3, p = 0.09). MedGemma vs. regex: 24 vs. 5, p = 0.001. Gemma 3 vs. regex: 22 vs. 9, p = 0.03. So both LLMs beat the regex, and MedGemma is ahead of Gemma 3, but **the difference between the two LLMs is not significant** on 416 reports.
+- 20 reports are wrong for all three methods; almost all of them are label problems (below).
+
+**Labels that no method can match (19 eval reports, "unreachable"):**
+- 9 label/report disagreements found in the regex analysis (CH-5745, CH-5748, EJ-5502, TK-A8OK, V1-A8WN, V1-A9OA, V1-A9OH, V1-A9Z9, V1-A9ZG).
+- **6 reports where the label is the earlier biopsy score, not the prostatectomy score** (all from site V1): V1-A9ZK (prostatectomy 5+4, history 4+4, label 4+4), V1-A9ZR (5+4 / 4+4 / 4+4), V1-A9OY (5+3 / 4+3 / 4+3), V1-A9O7 (5+5 / 5+4 / 5+4), V1-A9ZI (5+4 / 4+5 / 4+5), V1-A8MF (3+4 / "3+3 to 3+4" / 3+3). Both LLMs (and the regex) give the prostatectomy score, as the prompt asks. Worth reporting: for part of TCGA the clinical Gleason label seems to come from the biopsy, so the label definition is not uniform.
+- 2 reports whose label appears nowhere in the text (V1-A8X3: prostatectomy 3+5, history 3+3, label 3+4; J9-A8CP: a biopsy report with 4+4 and 3+3, label 4+3).
+- 2 reports with no Gleason score in the text (G9-A9S0, G9-A9S4).
+
+**Gemma 3 errors (13 on reachable reports):**
+- **7 invalid answers, all the "total first" error** seen on the tuning set: with "GLEASON SCORE 7 (3+4)"-style notation it puts the total in `primary` (e.g. `{"primary": 7, "secondary": 4}`, `{"primary": 9, "secondary": 7}`): EJ-5503, J9-A8CK, KK-A6E2, KK-A7AV, KK-A8I4, VN-A88K, VN-A88O. MedGemma makes this error zero times.
+- Wrong choice of score in a few multi-score reports (CH-5789: took an earlier 3+3 instead of the final 3+4; VN-A88I, VN-A88P, XA-A8JR, EJ-7218).
+- 1 likely hallucination: KK-A6E6, answered 3+5, which is not in the report (label 4+5).
+- Correctly answered "not found" on both reports without a score.
+
+**MedGemma 1.5 errors (7 on reachable reports):**
+- **Hallucinations, almost always "3+4", the most common score in the data:** CH-5751 (report: "total score 5+5 = 10", answer 3+4), CH-5752 (report: "Gleason 4+4 = 8", answer 3+4), EJ-7218 (answer 5+4, not in the report; the report has a tertiary pattern 5 and "pattern 4 and 5 components"). It also **never answers "not found"**: on both reports without any score (G9-A9S0, G9-A9S4) it answered 3+4. That is 5 hallucinations, 4 of them 3+4, against 1 for Gemma 3. Looks like a learned prior for the most common score; a good point for the error analysis.
+- **Copied OCR noise:** HC-8256 has "Histologic grade: 13+4=7. Primary pattern: 13. Secondary pattern: 14" (OCR added a "1"); MedGemma answered `{"primary": 13, "secondary": 14}` (invalid), although the report also says "GLEASON GRADE 3+4=7" twice.
+- Ambiguous reports, where both LLMs chose the same other score: VN-A88P ("predominant pattern 7 (3+4) with a component of 8 (4+4)" plus a synoptic form saying 4+4; label 3+4), XA-A8JR (diagnosis 4+3, synoptic form primary 3 / secondary 4; the report contradicts itself; label 4+3).
+- CH-5765: answered the original 4+3 instead of the amended "3+4=7" remark (label 3+4).
+
+**Automatic hallucination flag (`pair_in_text`):** J4-A83N was flagged for both LLMs, but both answered 3+4 correctly; the flag misses it because OCR dropped the "+" (`3 4 =. 7/10`). So the counts in the scores files (Gemma 3: 2, MedGemma: 6) each include this 1 false positive; the hand-checked hallucination counts are **Gemma 3: 1 (KK-A6E6), MedGemma: 5 (CH-5751, CH-5752, EJ-7218, G9-A9S0, G9-A9S4)**.
+
+**Notes for the report:** both eval LLM runs have an empty `note` field; the model change is visible in `changes` in `runs.csv`.
 
 ### Regex baseline (`results/eval/v1`, 416 eval reports)
 

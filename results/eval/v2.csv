@@ -1,0 +1,1065 @@
+patient_id,method,model_id,raw_output,pred_primary,pred_secondary,pred_score,status,parse_error,pair_in_text,possible_hallucination,label_primary,label_secondary,label_score,correct_score,correct_pair,n_prompt_tokens,n_new_tokens,hit_token_limit,seconds
+TCGA-2A-A8VL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1175,18,False,0.89
+TCGA-2A-A8VO,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1116,18,False,0.88
+TCGA-2A-A8VT,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,1469,13,False,0.68
+TCGA-2A-A8VV,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1335,18,False,0.91
+TCGA-2A-A8VX,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,1849,13,False,0.7
+TCGA-2A-A8W1,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1646,18,False,0.92
+TCGA-2A-A8W3,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1275,18,False,0.88
+TCGA-2A-AAYO,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,825,18,False,0.82
+TCGA-2A-AAYU,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1904,18,False,1.02
+TCGA-4L-AA1F,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,508,13,False,0.61
+TCGA-CH-5737,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,408,13,False,0.59
+TCGA-CH-5738,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 3}",3,3,6,valid,,True,False,3,3,6,True,True,341,13,False,0.59
+TCGA-CH-5739,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,382,13,False,0.6
+TCGA-CH-5740,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,347,13,False,0.6
+TCGA-CH-5741,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,671,13,False,0.6
+TCGA-CH-5743,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,429,13,False,0.6
+TCGA-CH-5744,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,643,13,False,0.6
+TCGA-CH-5745,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,3,4,7,True,False,708,13,False,0.6
+TCGA-CH-5746,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,430,13,False,0.6
+TCGA-CH-5748,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,4,3,7,True,False,351,13,False,0.6
+TCGA-CH-5750,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,495,13,False,0.6
+TCGA-CH-5751,llm,google/gemma-3-4b-it,"{""primary"": 5, ""secondary"": 5}",5,5,10,valid,,True,False,5,5,10,True,True,367,13,False,0.59
+TCGA-CH-5752,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,465,13,False,0.59
+TCGA-CH-5753,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,838,13,False,0.61
+TCGA-CH-5754,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,894,18,False,0.83
+TCGA-CH-5761,llm,google/gemma-3-4b-it,"{""primary"": 5, ""secondary"": 4}",5,4,9,valid,,True,False,5,4,9,True,True,608,13,False,0.6
+TCGA-CH-5762,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,389,13,False,0.59
+TCGA-CH-5764,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,642,13,False,0.6
+TCGA-CH-5765,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,403,14,False,0.64
+TCGA-CH-5766,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,440,13,False,0.59
+TCGA-CH-5767,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,449,14,False,0.64
+TCGA-CH-5768,llm,google/gemma-3-4b-it,"{""primary"": 2, ""secondary"": 4}",2,4,6,valid,,True,False,2,4,6,True,True,510,13,False,0.59
+TCGA-CH-5769,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,850,18,False,0.83
+TCGA-CH-5771,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,610,13,False,0.6
+TCGA-CH-5772,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,649,13,False,0.6
+TCGA-CH-5788,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,547,13,False,0.6
+TCGA-CH-5789,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 3}",3,3,6,valid,,True,False,3,4,7,False,False,479,13,False,0.6
+TCGA-CH-5790,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,442,13,False,0.59
+TCGA-CH-5791,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,444,13,False,0.59
+TCGA-CH-5794,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,445,13,False,0.6
+TCGA-EJ-5495,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 3}
+```",5,3,8,valid,,True,False,5,3,8,True,True,1442,18,False,0.91
+TCGA-EJ-5496,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,977,13,False,0.61
+TCGA-EJ-5497,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,925,18,False,0.83
+TCGA-EJ-5498,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,956,13,False,0.61
+TCGA-EJ-5499,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1061,18,False,0.88
+TCGA-EJ-5501,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1039,18,False,0.88
+TCGA-EJ-5502,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,4,3,7,True,False,939,13,False,0.61
+TCGA-EJ-5503,llm,google/gemma-3-4b-it,"```json
+{""primary"": 8, ""secondary"": 3}
+```",8,3,11,invalid,pattern_out_of_range,,False,5,3,8,False,False,1005,18,False,0.83
+TCGA-EJ-5504,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1256,18,False,0.89
+TCGA-EJ-5505,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,988,18,False,0.83
+TCGA-EJ-5506,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 3}
+```",5,3,8,valid,,True,False,5,3,8,True,True,1421,18,False,0.91
+TCGA-EJ-5507,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1192,18,False,0.89
+TCGA-EJ-5508,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1212,18,False,0.89
+TCGA-EJ-5509,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,904,18,False,0.83
+TCGA-EJ-5510,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1030,18,False,0.88
+TCGA-EJ-5511,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,997,13,False,0.61
+TCGA-EJ-5512,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,970,18,False,0.83
+TCGA-EJ-5514,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,924,18,False,0.83
+TCGA-EJ-5515,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1129,18,False,0.89
+TCGA-EJ-5516,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,947,18,False,0.83
+TCGA-EJ-5517,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,996,18,False,0.83
+TCGA-EJ-5518,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1264,18,False,0.89
+TCGA-EJ-5519,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1066,18,False,0.88
+TCGA-EJ-5521,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,965,13,False,0.61
+TCGA-EJ-5524,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1022,18,False,0.88
+TCGA-EJ-5525,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,1101,13,False,0.65
+TCGA-EJ-5526,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1028,18,False,0.88
+TCGA-EJ-5527,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1289,18,False,0.9
+TCGA-EJ-5530,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1049,18,False,0.89
+TCGA-EJ-5531,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1101,18,False,0.88
+TCGA-EJ-5532,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1137,18,False,0.89
+TCGA-EJ-5542,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1034,18,False,0.89
+TCGA-EJ-7115,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,880,13,False,0.61
+TCGA-EJ-7123,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,897,18,False,0.83
+TCGA-EJ-7125,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,776,13,False,0.6
+TCGA-EJ-7218,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,3,4,7,False,False,911,13,False,0.61
+TCGA-EJ-7312,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1083,18,False,0.88
+TCGA-EJ-7314,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,948,13,False,0.61
+TCGA-EJ-7315,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,902,13,False,0.61
+TCGA-EJ-7317,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,791,13,False,0.61
+TCGA-EJ-7318,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,766,13,False,0.6
+TCGA-EJ-7321,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 3}",3,3,6,valid,,True,False,3,3,6,True,True,858,13,False,0.61
+TCGA-EJ-7325,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,787,13,False,0.61
+TCGA-EJ-7327,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,866,18,False,0.83
+TCGA-EJ-7328,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,889,13,False,0.61
+TCGA-EJ-7330,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,992,13,False,0.61
+TCGA-EJ-7331,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,843,13,False,0.61
+TCGA-EJ-7781,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1111,18,False,0.88
+TCGA-EJ-7782,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,976,18,False,0.84
+TCGA-EJ-7783,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1014,18,False,0.86
+TCGA-EJ-7784,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,922,18,False,0.83
+TCGA-EJ-7785,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1018,18,False,0.86
+TCGA-EJ-7786,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1001,13,False,0.61
+TCGA-EJ-7788,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1153,18,False,0.89
+TCGA-EJ-7789,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1262,18,False,0.9
+TCGA-EJ-7791,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1078,18,False,0.89
+TCGA-EJ-7792,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1122,18,False,0.89
+TCGA-EJ-7793,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1107,18,False,0.89
+TCGA-EJ-7794,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,968,18,False,0.84
+TCGA-EJ-8468,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,932,18,False,0.83
+TCGA-EJ-8469,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1257,18,False,0.89
+TCGA-EJ-8470,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,940,13,False,0.61
+TCGA-EJ-8472,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1014,18,False,0.85
+TCGA-EJ-8474,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,1000,13,False,0.61
+TCGA-EJ-A46B,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1618,18,False,0.92
+TCGA-EJ-A46D,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 5}
+```",3,5,8,valid,,True,False,3,5,8,True,True,1498,18,False,0.92
+TCGA-EJ-A46E,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,2165,18,False,0.96
+TCGA-EJ-A46H,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1547,13,False,0.68
+TCGA-EJ-A46I,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,774,13,False,0.61
+TCGA-EJ-A65B,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1089,18,False,0.88
+TCGA-EJ-A65D,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1198,18,False,0.89
+TCGA-EJ-A65E,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1114,18,False,0.89
+TCGA-EJ-A65F,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1103,18,False,0.88
+TCGA-EJ-A65G,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 5}
+```",3,5,8,valid,,True,False,3,5,8,True,True,1143,18,False,0.89
+TCGA-EJ-A65J,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1389,18,False,0.91
+TCGA-EJ-A65M,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1007,18,False,0.83
+TCGA-EJ-A6RA,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,935,18,False,0.83
+TCGA-EJ-A6RC,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,850,13,False,0.6
+TCGA-EJ-A7NF,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,838,13,False,0.61
+TCGA-EJ-A7NG,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,940,18,False,0.83
+TCGA-EJ-A7NJ,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,868,13,False,0.61
+TCGA-EJ-A7NK,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,937,18,False,0.83
+TCGA-EJ-A7NM,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1057,18,False,0.88
+TCGA-EJ-A7NN,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,1096,13,False,0.65
+TCGA-EJ-A8FO,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,955,18,False,0.83
+TCGA-EJ-AB20,llm,google/gemma-3-4b-it,"```json
+{
+  ""primary"": 3,
+  ""secondary"": 3
+}
+```",3,3,6,valid,,True,False,3,3,6,True,True,2820,24,False,1.3
+TCGA-EJ-AB27,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,2761,18,False,1.01
+TCGA-FC-7961,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,970,18,False,0.83
+TCGA-FC-A4JI,llm,google/gemma-3-4b-it,"{""primary"": 5, ""secondary"": 3}",5,3,8,valid,,True,False,5,3,8,True,True,506,13,False,0.6
+TCGA-FC-A5OB,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,785,18,False,0.83
+TCGA-FC-A66V,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,924,18,False,0.83
+TCGA-FC-A8O0,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 3}",3,3,6,valid,,True,False,3,3,6,True,True,599,13,False,0.6
+TCGA-G9-6329,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1022,18,False,0.88
+TCGA-G9-6332,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1050,18,False,0.89
+TCGA-G9-6333,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1394,18,False,0.91
+TCGA-G9-6336,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1327,18,False,0.91
+TCGA-G9-6338,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1490,18,False,0.91
+TCGA-G9-6339,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1485,18,False,0.91
+TCGA-G9-6342,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1029,18,False,0.88
+TCGA-G9-6343,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1066,18,False,0.88
+TCGA-G9-6347,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1074,18,False,0.89
+TCGA-G9-6348,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1426,18,False,0.91
+TCGA-G9-6351,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1196,18,False,0.89
+TCGA-G9-6353,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1098,18,False,0.89
+TCGA-G9-6354,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1403,18,False,0.91
+TCGA-G9-6356,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1579,18,False,0.92
+TCGA-G9-6361,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1495,18,False,0.91
+TCGA-G9-6362,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1537,18,False,0.92
+TCGA-G9-6363,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1491,18,False,0.91
+TCGA-G9-6364,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2814,18,False,1.01
+TCGA-G9-6365,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1904,18,False,0.94
+TCGA-G9-6366,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1049,18,False,0.88
+TCGA-G9-6367,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1339,18,False,0.91
+TCGA-G9-6370,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1263,18,False,0.89
+TCGA-G9-6371,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1129,18,False,0.88
+TCGA-G9-6373,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1000,18,False,0.83
+TCGA-G9-6377,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1493,18,False,0.91
+TCGA-G9-6378,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1062,18,False,0.88
+TCGA-G9-6379,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1173,18,False,0.89
+TCGA-G9-6384,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1436,18,False,0.91
+TCGA-G9-6385,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1046,18,False,0.88
+TCGA-G9-6494,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1479,18,False,0.91
+TCGA-G9-6496,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,1238,13,False,0.65
+TCGA-G9-6498,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1059,18,False,0.89
+TCGA-G9-6499,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1362,18,False,0.91
+TCGA-G9-7509,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1079,18,False,0.89
+TCGA-G9-7510,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1534,18,False,0.92
+TCGA-G9-7519,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1076,18,False,0.89
+TCGA-G9-7521,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1438,18,False,0.91
+TCGA-G9-7522,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1483,18,False,0.91
+TCGA-G9-7523,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 5}
+```",5,5,10,valid,,True,False,5,5,10,True,True,1693,18,False,0.92
+TCGA-G9-7525,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1405,18,False,0.91
+TCGA-G9-A9S0,llm,google/gemma-3-4b-it,"```json
+{""primary"": null, ""secondary"": null}
+```",,,,not_found,,,False,4,4,8,False,False,1065,16,False,0.79
+TCGA-G9-A9S4,llm,google/gemma-3-4b-it,"```json
+{""primary"": null, ""secondary"": null}
+```",,,,not_found,,,False,4,4,8,False,False,1132,16,False,0.79
+TCGA-G9-A9S7,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1496,18,False,0.92
+TCGA-H9-7775,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,817,13,False,0.61
+TCGA-H9-A6BX,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 3}",3,3,6,valid,,True,False,3,3,6,True,True,824,13,False,0.6
+TCGA-H9-A6BY,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1265,18,False,0.89
+TCGA-HC-7077,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 3}",3,3,6,valid,,True,False,3,3,6,True,True,999,13,False,0.61
+TCGA-HC-7078,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,983,13,False,0.62
+TCGA-HC-7079,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1002,13,False,0.61
+TCGA-HC-7080,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,963,18,False,0.83
+TCGA-HC-7081,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1099,18,False,0.89
+TCGA-HC-7209,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,984,18,False,0.83
+TCGA-HC-7210,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1093,18,False,0.88
+TCGA-HC-7211,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1159,18,False,0.89
+TCGA-HC-7212,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1232,13,False,0.65
+TCGA-HC-7213,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1072,18,False,0.89
+TCGA-HC-7230,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1077,18,False,0.88
+TCGA-HC-7231,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,869,18,False,0.83
+TCGA-HC-7233,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1102,18,False,0.88
+TCGA-HC-7736,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1330,18,False,0.9
+TCGA-HC-7737,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,957,13,False,0.61
+TCGA-HC-7740,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,973,18,False,0.83
+TCGA-HC-7741,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1230,13,False,0.66
+TCGA-HC-7742,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1086,18,False,0.89
+TCGA-HC-7744,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1167,18,False,0.89
+TCGA-HC-7745,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1131,18,False,0.89
+TCGA-HC-7747,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,944,18,False,0.83
+TCGA-HC-7748,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,999,18,False,0.83
+TCGA-HC-7749,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1396,18,False,0.91
+TCGA-HC-7750,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1026,18,False,0.88
+TCGA-HC-7752,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1203,13,False,0.65
+TCGA-HC-7817,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,999,18,False,0.83
+TCGA-HC-7818,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1209,13,False,0.65
+TCGA-HC-7819,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1044,18,False,0.88
+TCGA-HC-7820,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1243,18,False,0.89
+TCGA-HC-7821,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1105,18,False,0.89
+TCGA-HC-8212,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1185,18,False,0.89
+TCGA-HC-8213,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,827,18,False,0.83
+TCGA-HC-8216,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,955,18,False,0.83
+TCGA-HC-8256,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1554,18,False,0.92
+TCGA-HC-8257,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1667,18,False,0.93
+TCGA-HC-8258,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,846,18,False,0.83
+TCGA-HC-8259,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,892,18,False,0.83
+TCGA-HC-8260,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1086,18,False,0.88
+TCGA-HC-8262,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1159,18,False,0.89
+TCGA-HC-8264,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,996,18,False,0.83
+TCGA-HC-8265,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 5}
+```",3,5,8,valid,,True,False,3,5,8,True,True,1046,18,False,0.88
+TCGA-HC-8266,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1485,18,False,0.91
+TCGA-HC-A48F,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1005,18,False,0.83
+TCGA-HC-A4ZV,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,2092,18,False,0.95
+TCGA-HC-A631,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1490,18,False,0.91
+TCGA-HC-A632,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1441,18,False,0.91
+TCGA-HC-A6AL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1054,18,False,0.89
+TCGA-HC-A6AN,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1403,18,False,0.91
+TCGA-HC-A6AO,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1122,18,False,0.88
+TCGA-HC-A6AP,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1000,18,False,0.83
+TCGA-HC-A6AQ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,994,18,False,0.83
+TCGA-HC-A6AS,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1154,18,False,0.89
+TCGA-HC-A6HX,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1018,18,False,0.86
+TCGA-HC-A6HY,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,850,18,False,0.83
+TCGA-HC-A76W,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1328,18,False,0.91
+TCGA-HC-A76X,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1012,18,False,0.85
+TCGA-HC-A8CY,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,2007,18,False,0.94
+TCGA-HC-A8D0,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1145,13,False,0.65
+TCGA-HC-A8D1,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1014,18,False,0.85
+TCGA-HC-A9TE,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1973,18,False,0.94
+TCGA-HC-A9TH,llm,google/gemma-3-4b-it,"```json
+{
+  ""primary"": 5,
+  ""secondary"": 4
+}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1256,24,False,1.17
+TCGA-HI-7168,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1154,18,False,0.88
+TCGA-HI-7169,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1102,18,False,0.88
+TCGA-HI-7170,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,958,18,False,0.83
+TCGA-HI-7171,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,975,18,False,0.83
+TCGA-J4-8198,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1688,18,False,0.92
+TCGA-J4-8200,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1711,18,False,0.93
+TCGA-J4-A67K,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1504,18,False,0.91
+TCGA-J4-A67L,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1697,18,False,0.93
+TCGA-J4-A67M,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,2070,18,False,0.95
+TCGA-J4-A67N,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2122,18,False,0.95
+TCGA-J4-A67O,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1881,13,False,0.7
+TCGA-J4-A67Q,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1458,18,False,0.91
+TCGA-J4-A67R,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,2025,18,False,0.94
+TCGA-J4-A67S,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1775,18,False,0.93
+TCGA-J4-A67T,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2006,18,False,0.95
+TCGA-J4-A6G1,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,2236,18,False,0.97
+TCGA-J4-A6G3,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,2389,18,False,0.97
+TCGA-J4-A6M7,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1579,18,False,0.92
+TCGA-J4-A83I,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,2367,18,False,0.97
+TCGA-J4-A83J,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1895,18,False,0.94
+TCGA-J4-A83K,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1560,18,False,0.92
+TCGA-J4-A83L,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2117,18,False,0.95
+TCGA-J4-A83M,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1894,18,False,0.94
+TCGA-J4-A83N,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,False,True,3,4,7,True,True,1296,18,False,0.9
+TCGA-J4-AATV,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,2311,18,False,0.97
+TCGA-J4-AATZ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,2395,18,False,0.97
+TCGA-J4-AAU2,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1558,18,False,0.91
+TCGA-J9-A52B,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1009,18,False,0.84
+TCGA-J9-A52C,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,681,13,False,0.6
+TCGA-J9-A52E,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,951,18,False,0.83
+TCGA-J9-A8CK,llm,google/gemma-3-4b-it,"```json
+{""primary"": 9, ""secondary"": 7}
+```",9,7,16,invalid,pattern_out_of_range,,False,4,5,9,False,False,1020,18,False,0.87
+TCGA-J9-A8CL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1162,18,False,0.89
+TCGA-J9-A8CM,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1049,18,False,0.88
+TCGA-J9-A8CN,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 3}",3,3,6,valid,,True,False,3,3,6,True,True,665,13,False,0.6
+TCGA-J9-A8CP,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,3,7,False,False,567,13,False,0.6
+TCGA-KC-A4BL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,999,18,False,0.83
+TCGA-KC-A4BN,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1215,18,False,0.89
+TCGA-KC-A4BO,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1682,18,False,0.93
+TCGA-KC-A4BR,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1976,18,False,0.94
+TCGA-KC-A4BV,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1405,18,False,0.91
+TCGA-KC-A7F3,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2003,18,False,0.94
+TCGA-KC-A7F5,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1840,18,False,0.93
+TCGA-KC-A7F6,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2060,18,False,0.95
+TCGA-KC-A7FD,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1741,18,False,0.93
+TCGA-KC-A7FE,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2224,18,False,0.96
+TCGA-KK-A59X,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1424,18,False,0.91
+TCGA-KK-A59Y,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1559,18,False,0.92
+TCGA-KK-A5A1,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,2072,18,False,0.95
+TCGA-KK-A6DY,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1471,18,False,0.91
+TCGA-KK-A6E0,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1328,18,False,0.91
+TCGA-KK-A6E1,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1451,18,False,0.91
+TCGA-KK-A6E2,llm,google/gemma-3-4b-it,"```json
+{""primary"": 7, ""secondary"": 4}
+```",7,4,11,invalid,pattern_out_of_range,,False,3,4,7,False,False,2354,18,False,0.97
+TCGA-KK-A6E3,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1381,18,False,0.91
+TCGA-KK-A6E4,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1191,18,False,0.89
+TCGA-KK-A6E5,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1610,18,False,0.92
+TCGA-KK-A6E6,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 5}
+```",3,5,8,valid,,False,True,4,5,9,False,False,1461,18,False,0.91
+TCGA-KK-A6E7,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1424,18,False,0.91
+TCGA-KK-A7AP,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1768,18,False,0.93
+TCGA-KK-A7AQ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1583,18,False,0.91
+TCGA-KK-A7AU,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1773,18,False,0.93
+TCGA-KK-A7AV,llm,google/gemma-3-4b-it,"```json
+{""primary"": 7, ""secondary"": 4}
+```",7,4,11,invalid,pattern_out_of_range,,False,3,4,7,False,False,1979,18,False,0.94
+TCGA-KK-A7AW,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1494,18,False,0.91
+TCGA-KK-A7AY,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1387,18,False,0.91
+TCGA-KK-A7B0,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1543,18,False,0.91
+TCGA-KK-A7B1,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1389,18,False,0.91
+TCGA-KK-A7B2,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1343,18,False,0.9
+TCGA-KK-A7B3,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1423,18,False,0.91
+TCGA-KK-A7B4,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1674,18,False,0.93
+TCGA-KK-A8I4,llm,google/gemma-3-4b-it,"```json
+{""primary"": 7, ""secondary"": 3}
+```",7,3,10,invalid,pattern_out_of_range,,False,4,3,7,False,False,2004,18,False,0.94
+TCGA-KK-A8I5,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1590,18,False,0.92
+TCGA-KK-A8I6,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1756,18,False,0.93
+TCGA-KK-A8I7,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1798,18,False,0.93
+TCGA-KK-A8I8,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1743,18,False,0.93
+TCGA-KK-A8IA,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1678,18,False,0.93
+TCGA-KK-A8IC,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1450,18,False,0.91
+TCGA-KK-A8ID,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1518,18,False,0.91
+TCGA-KK-A8IF,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1802,18,False,0.94
+TCGA-KK-A8IG,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1403,18,False,0.91
+TCGA-KK-A8II,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1836,18,False,0.94
+TCGA-KK-A8IJ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1623,18,False,0.92
+TCGA-KK-A8IK,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1634,18,False,0.92
+TCGA-KK-A8IL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1368,18,False,0.9
+TCGA-KK-A8IM,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1416,18,False,0.91
+TCGA-M7-A71Z,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1136,18,False,0.89
+TCGA-M7-A720,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 3}",3,3,6,valid,,True,False,3,3,6,True,True,823,13,False,0.6
+TCGA-M7-A721,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,793,13,False,0.6
+TCGA-M7-A722,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1462,18,False,0.91
+TCGA-M7-A723,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1464,18,False,0.91
+TCGA-M7-A724,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,1403,13,False,0.67
+TCGA-M7-A725,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1147,18,False,0.89
+TCGA-MG-AAMC,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1017,18,False,0.86
+TCGA-QU-A6IL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1409,18,False,0.92
+TCGA-QU-A6IM,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1208,18,False,0.89
+TCGA-QU-A6IN,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1231,13,False,0.66
+TCGA-QU-A6IO,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1396,18,False,0.91
+TCGA-SU-A7E7,llm,google/gemma-3-4b-it,"{""primary"": 5, ""secondary"": 3}",5,3,8,valid,,True,False,5,3,8,True,True,644,13,False,0.6
+TCGA-TK-A8OK,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,3,4,7,True,False,376,14,False,0.64
+TCGA-TP-A8TT,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,1248,13,False,0.65
+TCGA-TP-A8TV,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,3,7,True,True,929,13,False,0.6
+TCGA-V1-A8MF,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,3,6,False,False,1837,18,False,0.93
+TCGA-V1-A8MJ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1947,18,False,0.94
+TCGA-V1-A8MK,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1165,18,False,0.89
+TCGA-V1-A8ML,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2127,18,False,0.95
+TCGA-V1-A8MM,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1567,18,False,0.91
+TCGA-V1-A8MU,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2878,18,False,1.01
+TCGA-V1-A8WL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2329,18,False,0.96
+TCGA-V1-A8WN,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,3,6,False,False,1382,18,False,0.9
+TCGA-V1-A8WV,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1731,18,False,0.93
+TCGA-V1-A8WW,llm,google/gemma-3-4b-it,"```json
+{
+  ""primary"": 4,
+  ""secondary"": 5
+}
+```",4,5,9,valid,,True,False,4,5,9,True,True,2433,24,False,1.25
+TCGA-V1-A8X3,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 5}
+```",3,5,8,valid,,True,False,3,4,7,False,False,1494,18,False,0.91
+TCGA-V1-A9O7,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 5}
+```",5,5,10,valid,,True,False,5,4,9,False,False,1997,18,False,0.94
+TCGA-V1-A9O9,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 5}
+```",3,5,8,valid,,True,False,3,5,8,True,True,2038,18,False,0.94
+TCGA-V1-A9OA,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,4,5,9,True,False,1830,18,False,0.94
+TCGA-V1-A9OF,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1352,18,False,0.9
+TCGA-V1-A9OH,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,4,4,8,False,False,1781,18,False,0.93
+TCGA-V1-A9OL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1448,18,False,0.91
+TCGA-V1-A9OQ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1528,18,False,0.91
+TCGA-V1-A9OT,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1482,18,False,0.91
+TCGA-V1-A9OX,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 5}
+```",3,5,8,valid,,True,False,3,5,8,True,True,1872,18,False,0.93
+TCGA-V1-A9OY,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 3}
+```",5,3,8,valid,,True,False,4,3,7,False,False,2482,18,False,0.97
+TCGA-V1-A9Z7,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1787,18,False,0.93
+TCGA-V1-A9Z8,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1912,18,False,0.94
+TCGA-V1-A9Z9,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,4,5,9,True,False,2026,18,False,0.94
+TCGA-V1-A9ZG,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,4,5,9,True,False,1367,18,False,0.9
+TCGA-V1-A9ZI,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,4,5,9,True,False,1619,18,False,0.91
+TCGA-V1-A9ZK,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,4,4,8,False,False,1557,18,False,0.91
+TCGA-V1-A9ZR,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,4,4,8,False,False,2212,18,False,0.96
+TCGA-VN-A88I,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,4,8,False,False,2353,18,False,0.97
+TCGA-VN-A88K,llm,google/gemma-3-4b-it,"```json
+{
+  ""primary"": 8,
+  ""secondary"": 4
+}
+```",8,4,12,invalid,pattern_out_of_range,,False,4,4,8,False,False,2649,24,False,1.27
+TCGA-VN-A88L,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2008,18,False,0.94
+TCGA-VN-A88M,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2021,18,False,0.94
+TCGA-VN-A88N,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,2077,18,False,0.95
+TCGA-VN-A88O,llm,google/gemma-3-4b-it,"```json
+{""primary"": 7, ""secondary"": 4}
+```",7,4,11,invalid,pattern_out_of_range,,False,3,4,7,False,False,1707,18,False,0.93
+TCGA-VN-A88P,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,3,4,7,False,False,2091,18,False,0.95
+TCGA-VN-A88Q,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,2079,18,False,0.95
+TCGA-VN-A88R,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,2798,18,False,1.0
+TCGA-VP-A875,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,1239,13,False,0.65
+TCGA-VP-A87B,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1656,18,False,0.92
+TCGA-VP-A87E,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1429,18,False,0.9
+TCGA-VP-A87J,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1763,18,False,0.93
+TCGA-VP-AA1N,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1372,18,False,0.91
+TCGA-WW-A8ZI,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1259,18,False,0.88
+TCGA-X4-A8KS,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,717,13,False,0.6
+TCGA-XA-A8JR,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,4,3,7,True,False,1690,18,False,0.92
+TCGA-XJ-A83H,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,959,18,False,0.82
+TCGA-XJ-A9DI,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1448,18,False,0.9
+TCGA-XJ-A9DK,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1187,18,False,0.89
+TCGA-XJ-A9DQ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,998,18,False,0.82
+TCGA-XJ-A9DX,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,2190,18,False,0.96
+TCGA-XK-AAIR,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1492,18,False,0.91
+TCGA-XK-AAIV,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 5}
+```",5,5,10,valid,,True,False,5,5,10,True,True,2111,18,False,0.95
+TCGA-XK-AAJ3,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1441,18,False,0.91
+TCGA-XQ-A8TA,llm,google/gemma-3-4b-it,"{""primary"": 5, ""secondary"": 5}",5,5,10,valid,,True,False,5,5,10,True,True,330,13,False,0.59
+TCGA-Y6-A8TL,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1520,18,False,0.91
+TCGA-Y6-A9XI,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1617,18,False,0.92
+TCGA-YJ-A8SW,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1380,18,False,0.9
+TCGA-YL-A8HK,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,640,13,False,0.59
+TCGA-YL-A8HL,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,652,13,False,0.6
+TCGA-YL-A8HM,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,572,13,False,0.59
+TCGA-YL-A8HO,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1072,18,False,0.88
+TCGA-YL-A8SA,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,687,13,False,0.6
+TCGA-YL-A8SJ,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,565,13,False,0.59
+TCGA-YL-A8SL,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,691,13,False,0.6
+TCGA-YL-A8SO,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,556,13,False,0.59
+TCGA-YL-A9WI,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,587,13,False,0.59
+TCGA-YL-A9WK,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,610,13,False,0.6
+TCGA-YL-A9WY,llm,google/gemma-3-4b-it,"{""primary"": 5, ""secondary"": 4}",5,4,9,valid,,True,False,5,4,9,True,True,707,13,False,0.6
+TCGA-ZG-A8QW,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1096,18,False,0.88
+TCGA-ZG-A8QX,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,982,18,False,0.83
+TCGA-ZG-A8QY,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1086,18,False,0.88
+TCGA-ZG-A8QZ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1208,18,False,0.89
+TCGA-ZG-A9L0,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1266,18,False,0.89
+TCGA-ZG-A9L5,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1134,18,False,0.89
+TCGA-ZG-A9LB,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1151,18,False,0.89
+TCGA-ZG-A9LS,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1276,18,False,0.89
+TCGA-ZG-A9MC,llm,google/gemma-3-4b-it,"{""primary"": 5, ""secondary"": 4}",5,4,9,valid,,True,False,5,4,9,True,True,1222,13,False,0.66
+TCGA-ZG-A9N3,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1365,18,False,0.9
