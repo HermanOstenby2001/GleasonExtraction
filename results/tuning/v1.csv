@@ -1,0 +1,79 @@
+patient_id,method,model_id,raw_output,pred_primary,pred_secondary,pred_score,status,parse_error,pair_in_text,possible_hallucination,label_primary,label_secondary,label_score,correct_score,correct_pair,n_prompt_tokens,n_new_tokens,hit_token_limit,seconds
+TCGA-CH-5763,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,741,13,False,0.58
+TCGA-CH-5792,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,350,13,False,0.59
+TCGA-EJ-5494,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,971,18,False,0.81
+TCGA-EJ-5522,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1015,18,False,0.83
+TCGA-EJ-7797,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,923,18,False,0.81
+TCGA-EJ-A46G,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,952,13,False,0.6
+TCGA-FC-7708,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,911,18,False,0.81
+TCGA-FC-A6HD,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,932,18,False,0.81
+TCGA-G9-6369,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1323,18,False,0.88
+TCGA-HC-7075,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,798,18,False,0.8
+TCGA-HC-7232,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1163,18,False,0.87
+TCGA-HC-7738,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1140,18,False,0.86
+TCGA-KC-A7FA,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2065,18,False,0.93
+TCGA-KK-A59V,llm,google/gemma-3-4b-it,"```json
+{""primary"": 9, ""secondary"": 5}
+```",9,5,14,invalid,pattern_out_of_range,,False,4,5,9,False,False,2198,18,False,0.93
+TCGA-KK-A59Z,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1165,18,False,0.86
+TCGA-KK-A6E8,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1505,18,False,0.89
+TCGA-KK-A7AZ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1489,18,False,0.89
+TCGA-KK-A8I9,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1398,18,False,0.89
+TCGA-KK-A8IH,llm,google/gemma-3-4b-it,"```json
+{""primary"": 7, ""secondary"": 3}
+```",7,3,10,invalid,pattern_out_of_range,,False,4,3,7,False,False,1657,18,False,0.89
+TCGA-M7-A71Y,llm,google/gemma-3-4b-it,"{""primary"": 3, ""secondary"": 4}",3,4,7,valid,,True,False,3,4,7,True,True,865,13,False,0.59
+TCGA-QU-A6IP,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1164,18,False,0.86
+TCGA-V1-A8MG,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1711,18,False,0.9
+TCGA-V1-A8WS,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1687,18,False,0.9
+TCGA-VN-A943,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1714,18,False,0.9
+TCGA-X4-A8KQ,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,5,9,False,False,1026,18,False,0.86
+TCGA-XJ-A83F,llm,google/gemma-3-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1374,18,False,0.88
+TCGA-XJ-A83G,llm,google/gemma-3-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1440,18,False,1.16
+TCGA-XQ-A8TB,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 5}",4,5,9,valid,,True,False,4,5,9,True,True,768,13,False,0.58
+TCGA-YL-A9WJ,llm,google/gemma-3-4b-it,"{""primary"": 4, ""secondary"": 4}",4,4,8,valid,,True,False,4,4,8,True,True,706,13,False,0.59
+TCGA-ZG-A9ND,llm,google/gemma-3-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1125,18,False,0.87

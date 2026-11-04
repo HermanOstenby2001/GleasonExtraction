@@ -1,0 +1,89 @@
+patient_id,method,model_id,raw_output,pred_primary,pred_secondary,pred_score,status,parse_error,pair_in_text,possible_hallucination,label_primary,label_secondary,label_score,correct_score,correct_pair,n_prompt_tokens,n_new_tokens,hit_token_limit,seconds
+TCGA-CH-5763,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,741,18,False,0.8
+TCGA-CH-5792,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,350,18,False,0.8
+TCGA-EJ-5494,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,971,18,False,0.81
+TCGA-EJ-5522,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1015,18,False,0.83
+TCGA-EJ-7797,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,923,18,False,0.81
+TCGA-EJ-A46G,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,952,18,False,0.81
+TCGA-FC-7708,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,911,18,False,0.81
+TCGA-FC-A6HD,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,932,18,False,0.81
+TCGA-G9-6369,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1323,18,False,0.88
+TCGA-HC-7075,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,798,18,False,0.8
+TCGA-HC-7232,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1163,18,False,0.86
+TCGA-HC-7738,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1140,18,False,0.87
+TCGA-KC-A7FA,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,2065,18,False,0.93
+TCGA-KK-A59V,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,2198,18,False,0.93
+TCGA-KK-A59Z,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1165,18,False,0.86
+TCGA-KK-A6E8,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,1505,18,False,0.89
+TCGA-KK-A7AZ,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1489,18,False,0.89
+TCGA-KK-A8I9,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1398,18,False,0.88
+TCGA-KK-A8IH,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1657,18,False,0.9
+TCGA-M7-A71Y,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,865,18,False,0.81
+TCGA-QU-A6IP,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1164,18,False,0.87
+TCGA-V1-A8MG,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1711,18,False,0.91
+TCGA-V1-A8WS,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 3}
+```",3,3,6,valid,,True,False,3,3,6,True,True,1687,18,False,0.91
+TCGA-VN-A943,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,1714,18,False,0.91
+TCGA-X4-A8KQ,llm,google/medgemma-1.5-4b-it,"{""primary"": 4, ""secondary"": 3}",4,3,7,valid,,True,False,4,5,9,False,False,1026,13,False,0.64
+TCGA-XJ-A83F,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 3, ""secondary"": 4}
+```",3,4,7,valid,,True,False,3,4,7,True,True,1374,18,False,0.89
+TCGA-XJ-A83G,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 3}
+```",4,3,7,valid,,True,False,4,3,7,True,True,1440,18,False,0.89
+TCGA-XQ-A8TB,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 5}
+```",4,5,9,valid,,True,False,4,5,9,True,True,768,18,False,0.81
+TCGA-YL-A9WJ,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 4, ""secondary"": 4}
+```",4,4,8,valid,,True,False,4,4,8,True,True,706,18,False,0.81
+TCGA-ZG-A9ND,llm,google/medgemma-1.5-4b-it,"```json
+{""primary"": 5, ""secondary"": 4}
+```",5,4,9,valid,,True,False,5,4,9,True,True,1125,18,False,1.08

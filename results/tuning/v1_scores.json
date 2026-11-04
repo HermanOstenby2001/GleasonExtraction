@@ -1,0 +1,41 @@
+{
+  "n": 30,
+  "accuracy": 0.9,
+  "macro_f1": 0.9427,
+  "f1_per_score": {
+    "6": 1.0,
+    "7": 0.9375,
+    "8": 1.0,
+    "9": 0.8333
+  },
+  "pair_exact_match": 0.9,
+  "accuracy_when_valid": 0.9643,
+  "valid_rate": 0.9333,
+  "not_found_rate": 0.0,
+  "invalid_rate": 0.0667,
+  "possible_hallucination_rate": 0.0,
+  "parse_errors": {
+    "pattern_out_of_range": 2
+  },
+  "confusion_matrix": {
+    "6": {
+      "6": 3
+    },
+    "7": {
+      "7": 15,
+      "invalid": 1
+    },
+    "8": {
+      "8": 4
+    },
+    "9": {
+      "7": 1,
+      "9": 5,
+      "invalid": 1
+    }
+  },
+  "hit_token_limit": 0,
+  "mean_new_tokens": 17.0,
+  "max_prompt_tokens": 2198,
+  "total_minutes": 0.4
+}

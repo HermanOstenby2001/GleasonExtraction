@@ -1,0 +1,16 @@
+{
+  "method": "llm",
+  "model_id": "google/gemma-3-4b-it",
+  "subset": "tuning",
+  "n_reports": null,
+  "prompt_template": "Below is a pathology report for a patient with prostate cancer. The text was produced by OCR from a scanned document and may contain typos and noise.\n\nFind the Gleason score of the prostate cancer in the report. A Gleason score consists of a primary pattern and a secondary pattern, each graded from 1 to 5. It is often written as \"primary + secondary = total\", for example \"3 + 4 = 7\".\n\nThe report may mention more than one Gleason score, for example from an earlier biopsy, in the clinical history, or for separate tumor nodules. Report the overall Gleason score of the tumor in the specimen examined in this report, as given in the final diagnosis. Do not use scores from earlier biopsies or the clinical history. If separate nodules are graded, use the score of the dominant tumor. Ignore tertiary patterns.\n\nIf the report does not contain a Gleason score, use null for both patterns.\n\nAnswer with JSON only, in exactly this format:\n{\"primary\": <primary pattern>, \"secondary\": <secondary pattern>}\n\nReport:\n{report}",
+  "max_new_tokens": 1024,
+  "do_sample": false,
+  "block_thinking": true,
+  "dtype": "bfloat16",
+  "seed": 13,
+  "log_run": true,
+  "note": "",
+  "run": "v1",
+  "date": "2026-11-04T13:41:03"
+}

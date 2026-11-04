@@ -210,16 +210,18 @@ def pair_in_text(text, primary, secondary):
 # Building the run table and scoring
 # ---------------------------------------------------------------------------
 
-def build_run_table(data, raw_outputs, config):
+def build_run_table(data, raw_outputs, config, extra=None):
     """Combine the reports, the raw outputs and the parsed answers into one table.
 
     Args:
         data: DataFrame from load_data (must contain text and the label columns).
         raw_outputs: list of raw output strings, one per row of `data`, in the same order.
         config: the run's config dict (method and model_id are copied into the table).
+        extra: optional dict {column name: list of values, one per report} with method-specific
+            columns to keep, e.g. token counts for the LLMs. They are added after RUN_COLUMNS.
 
     Returns:
-        DataFrame with one row per report and the columns in RUN_COLUMNS.
+        DataFrame with one row per report and the columns in RUN_COLUMNS (plus any extra columns).
     """
     assert len(raw_outputs) == len(data), "One raw output per report is needed"
     table = data.copy()
@@ -246,7 +248,12 @@ def build_run_table(data, raw_outputs, config):
         & (table["pred_secondary"] == table["label_secondary"])
     # pandas comparisons with <NA> give <NA>; count those as wrong
     table[["correct_score", "correct_pair"]] = table[["correct_score", "correct_pair"]].fillna(False).astype(bool)
-    return table[RUN_COLUMNS]
+
+    extra = extra or {}
+    for name, values in extra.items():
+        assert len(values) == len(table), f"Extra column {name} needs one value per report"
+        table[name] = list(values)
+    return table[RUN_COLUMNS + list(extra)]
 
 
 def score_run(table):

@@ -96,7 +96,7 @@ Every patient has a label, but not every report necessarily states a Gleason sco
 - The JSON schema allows a "not found" answer (`null` for primary and secondary). The regex baseline returns the same.
 - Score "not found" separately from invalid and hallucinated answers. It counts as wrong for accuracy and macro-F1, but it is an honest abstention, not a hallucination.
 - A *hallucination* is a score the model gives when the report contains none, or patterns that appear nowhere in the report.
-- Decide **before** the evaluation runs which score counts as correct when a report has several (e.g. the highest, or the one in the final diagnosis). Say the same thing in the prompt and in the regex, and state the rule in the report.
+- Decide **before** the evaluation runs which score counts as correct when a report has several, and state it in the report. The regex uses a hard-coded rule (highest score); the LLM prompt instead describes the wanted score (the overall score of the examined specimen in the final diagnosis, not biopsy/history scores). See "Multi-score rule" under "Findings so far".
 - Estimate how many reports really lack a score, e.g. by checking the regex's "not found" cases by hand. That number is the ceiling for any method and is worth reporting.
 
 ## Findings so far
@@ -113,7 +113,27 @@ Results to use in the report. Each number can be traced to a logged run or to th
 
 ### Multi-score rule
 
-Decided on the tuning set, before any eval run: when a report has several different pairs, the answer is the **highest** score (highest sum, ties broken by the higher primary pattern). On the tuning set this was right in all 3 multi-score reports; "first mentioned" got one wrong (0.967 vs. 0.933 accuracy). The same rule must be stated in the LLM prompt.
+**Regex:** decided on the tuning set, before any eval run: when a report has several different pairs, the answer is the **highest** score (highest sum, ties broken by the higher primary pattern). On the tuning set this was right in all 3 multi-score reports; "first mentioned" got one wrong (0.967 vs. 0.933 accuracy).
+
+**LLMs:** decided before any LLM run, deliberately **different from the regex**. The prompt does not give a hard-coded rule; it describes which score is wanted: the overall Gleason score of the specimen examined in the report, as given in the final diagnosis; not scores from earlier biopsies or the clinical history; the dominant tumor if separate nodules are graded; tertiary patterns ignored. Rationale: understanding which score the report means is exactly what a language model can do and a regex cannot, so this is part of what is being compared. It also matches what the TCGA label is (the pathologic Gleason score of the resected specimen). The tuning set already shows these cases (EJ-5522: per-zone biopsy scores in the history; FC-A6HD: several nodules, dominant 4+3; tertiary patterns in V1-A8MG, KK-A8IH). Note for the report: the post-hoc check of the regex on the eval set (below) also showed that biopsy/history scores are the main source of regex errors, so the wording was not chosen blind to the eval set; say so.
+
+### Reasoning (decided before any LLM run)
+
+The main comparison is regex vs. MedGemma 1.5 vs. Gemma 3, **all LLMs with reasoning blocked** (`block_thinking=True`, i.e. the `<unused94>` token is banned with `bad_words_ids`, for both models). Reason: the task is locating and copying a score, which should not need reasoning, and it is much faster. MedGemma with reasoning allowed may be added later as an extra condition. Both models use `max_new_tokens=1024`, greedy decoding, no input truncation (longest prompt: 2,834 tokens).
+
+### LLM tuning runs (`results/tuning/v1`, `v2`, 30 tuning reports)
+
+Prompt with the "final diagnosis" wording, reasoning blocked, greedy, `max_new_tokens=1024`. About 17 new tokens per answer, 0.4 min per run.
+
+| Run | Model | Accuracy | Macro-F1 | Pair exact match | Invalid |
+|---|---|---|---|---|---|
+| v1 | Gemma 3 4B-it | 0.900 | 0.943 | 0.900 | 2 |
+| v2 | MedGemma 1.5 4B-it | 0.967 | 0.973 | 0.967 | 0 |
+
+- MedGemma's only miss is X4-A8KQ (label/report disagreement, see the regex section), so it is correct on every tuning report whose label matches the text.
+- Gemma 3's 2 invalid answers are the same error: with the notation **"GLEASON SCORE 9 (4+5)"** (total written before the pair) it put the total in `primary` (`{"primary": 9, "secondary": 5}` for KK-A59V; `{"primary": 7, "secondary": 3}` for KK-A8IH, "7 (4+3) WITH TERTIARY GLEASON GRADE 5"). Both reports have extra numbers near the score (an OCR fragment "5/3+2", a tertiary grade 5). Four other KK reports with the same notation were correct. Not hallucinations: all numbers are in the report, just put in the wrong field.
+- Both models sometimes wrap the JSON in a ```` ```json ```` code block (MedGemma always); the parser handles it.
+- **Decision: the prompt was not changed after these runs.** Adding a sentence about the "total first" notation was considered and rejected, so the difference is kept as a finding about the models rather than tuned away. The prompt in `results/tuning/v1_config.json` is the final prompt for the eval runs.
 
 ### Regex baseline (`results/eval/v1`, 416 eval reports)
 
